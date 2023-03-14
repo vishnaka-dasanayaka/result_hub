@@ -1,5 +1,6 @@
 import React from 'react'
 import "./navbar.css"
+import Button from 'react-bootstrap/Button';
 
 export default function NavBar() {
   return (
@@ -27,10 +28,10 @@ export default function NavBar() {
 
       <div className="navBarRight">
 
-        <div className="navBarButtons">
+        <div>
 
-            <button className="navBarButton">Log In</button>
-            <button className="navBarButton">Register</button>
+          <Button className='navBarButton' variant="secondary">Log In</Button>{' '}
+          <Button className='navBarButton' variant="secondary">Register</Button>{' '}
 
         </div>
 

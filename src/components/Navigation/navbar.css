@@ -40,21 +40,8 @@
     cursor: pointer;
 }
 
-.navBarButtons{
-    display: flex;
-    align-content: space-between;
-    margin-right: 30px;
-}
-
 .navBarButton{
-    color:white;
     background-color: #3c6255;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;;
+    cursor: pointer;
 }
-
 

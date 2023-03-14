@@ -1,47 +1,14 @@
 .logo{
-    height: 90px;
-    border-radius: 20px;
-    margin-left: 100px;
-    cursor: pointer;
+    height: 60px;
+    border-radius: 15px;
 }
 
-.navBarBox{
-    height: 152px;
-    width: 100%;
+.navBar{
+    max-width: 100% !important;
     background-color: #84a98c;
-    display: flex;
-    align-items: center;
-    position: sticky;
-    top: 0;
+    padding: 2%;
 }
 
-.navBarLeft{
-    flex: 3;
+.navbar {
+    --bs-navbar-padding-y: 0 !important;
 }
-
-.navBarCenter{
-    flex: 5;
-}
-
-.navBarRight{
-    flex: 4;
-}
-
-.navBarLinks{
-    display: flex;
-    align-content: space-between;
-    margin-right: 40px;
-}
-
-.navBarLink{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
-.navBarButton{
-    background-color: #3c6255;
-    cursor: pointer;
-}
-

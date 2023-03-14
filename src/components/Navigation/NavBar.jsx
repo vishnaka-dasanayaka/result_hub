@@ -1,42 +1,32 @@
 import React from 'react'
 import "./navbar.css"
 import Button from 'react-bootstrap/Button';
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function NavBar() {
   return (
-    <div className='navBarBox'>
-
-      <div className="navBarLeft">
-
-        <div className="resultHubLogo">
-            <img src="/images/logo.png" alt="Web Site Logo" className="logo" />
-        </div>
-
-      </div>
-
-      <div className="navBarCenter">
-
-        <div className="navBarLinks">
-
-            <span className="navBarLink">Home</span>
-            <span className="navBarLink">Exam Calander</span>
-            <span className="navBarLink">About Us</span>
-
-        </div>
-
-      </div>
-
-      <div className="navBarRight">
-
-        <div>
-
-          <Button className='navBarButton' variant="secondary">Log In</Button>{' '}
-          <Button className='navBarButton' variant="secondary">Register</Button>{' '}
-
-        </div>
-
-      </div>
-
-    </div>
+    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
+      <Container className='navBar'>
+        <img className='logo' src="/images/logo.png" alt="" />
+        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+        <Navbar.Collapse id="responsive-navbar-nav">
+          
+          <Nav className="me-auto">
+            <Nav.Link navBarText href="#features">Home</Nav.Link>
+            <Nav.Link navBarText href="#pricing">Exam Calender</Nav.Link>
+            <Nav.Link navBarText href="#pricing">About Us</Nav.Link>
+          </Nav>
+          
+          <Nav>
+            <Button variant="secondary">Secondary</Button>{' '}
+            <Button variant="secondary">Secondary</Button>{' '}
+          </Nav>
+        
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   )
 }

@@ -1,0 +1,55 @@
+.heroSection{
+    display: flex;
+}
+
+.heroText{
+    flex: 6;
+    width: 50%;
+}
+
+.heroImage{
+    flex: 6;
+    margin-top: 2%;
+}
+
+.heroPic{
+    width: 75%;
+    height: auto;
+}
+
+.heroTopic{
+    font-size: 350%;
+    margin-left: 25%;
+    margin-top: -5%;
+}
+
+.initialLetter{
+    font-size: 140%;
+}
+
+.heroTopicDescription{
+    color: #daa625;
+    margin-left: 25%;
+}
+
+.heroCommand{
+    font-size: large;
+    margin-top: 7%;
+    margin-left: 25%;
+}
+
+.link a{
+    text-decoration: none;
+    color: #139d4a;
+}
+
+.blue{
+    color: #1281aa;
+}
+
+.heroPara{
+    font-size: large;
+    margin-top: 10%;
+    width: 60%;
+    margin-left: 25%;
+}

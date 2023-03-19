@@ -1,32 +1,63 @@
-import React from 'react'
-import "./navbar.css"
+import React from 'react';
+import "./navbar.css";
+import { useMediaQuery } from 'react-responsive';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 
 export default function NavBar() {
-  return (
-    <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-      <Container className='navBar'>
-        <img className='logo' src="/images/logo.png" alt="" />
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          
-          <Nav className="me-auto">
-            <Nav.Link navBarText href="#features">Home</Nav.Link>
-            <Nav.Link navBarText href="#pricing">Exam Calender</Nav.Link>
-            <Nav.Link navBarText href="#pricing">About Us</Nav.Link>
-          </Nav>
-          
-          <Nav>
-            <Button variant="secondary">Secondary</Button>{' '}
-            <Button variant="secondary">Secondary</Button>{' '}
-          </Nav>
-        
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-  )
+  const isDesktopOrLaptop = useMediaQuery({
+    query: '(min-width: 811px)'
+  })
+
+  const isTabletOrMobile = useMediaQuery({
+      query: '(max-width: 810px) and (min-width: 376px)'
+  })
+
+  const isPorttrait = useMediaQuery({
+      query: '(max-width: 375px)'
+  })
+
+return (
+<div>
+    {isDesktopOrLaptop && 
+      <div>
+        <div className="navBar-l">
+          <img src="/images/logo.png" alt="" className="logo-l" />
+
+          <div className="navBarMiddle-l">
+            <a href="#" className="navBarItem-l">Home</a>
+            <a href="#" className="navBarItem-l">Exam Calender</a>
+            <a href="#" className="navBarItem-l">About Us</a>
+          </div>
+
+          <div className="navBarRight-l">
+            <button className="navBarButton-l">Log In</button>
+            <button className="navBarButton-l">Register</button>
+          </div>
+        </div>
+      </div>
+    }
+    {isTabletOrMobile && 
+      <div>
+        <div className="navBar-l">
+          <img src="/images/logo.png" alt="" className="logo-t" />
+
+          <div className="navBarMiddle-l">
+            <a href="#" className="navBarItem-l">Home</a>
+            <a href="#" className="navBarItem-l">Exam Calender</a>
+            <a href="#" className="navBarItem-l">About Us</a>
+          </div>
+
+          <div className="navBarRight-l">
+            <button className="navBarButton-l">Log In</button>
+            <button className="navBarButton-l">Register</button>
+          </div>
+        </div>
+      </div>
+    }
+    {isPorttrait && <p>You are in portrait</p>}
+</div>
+)
 }

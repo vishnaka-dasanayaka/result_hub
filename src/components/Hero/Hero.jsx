@@ -9,7 +9,7 @@ export default function Hero() {
 
         <h1 className='heroTopic'>
             <span className="initialLetter">R</span>ESULT
-            <span className="initialLetter">  H</span>UB
+            <span className="initialLetter">  H</span>UB 
         </h1>
 
         <h2 className='heroTopicDescription'>Grab Your Results</h2>
@@ -17,7 +17,7 @@ export default function Hero() {
         <p className='heroCommand'>
             <span className="link"><a href="https://www.google.com/">Log In </a></span>
                  or
-            <span className="link"><a href="https://www.google.com/"> Register</a></span>
+            <span className="link"><a href="https://www.google.com/"> Register </a></span>
              to <span className="blue">VIEW RESULTS</span>
         </p>
 

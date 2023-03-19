@@ -53,3 +53,10 @@
     width: 60%;
     margin-left: 25%;
 }
+
+/* medium screen*/
+
+.hero-t{
+    color: red;
+    background: url(../../../public/images/home.jpg);
+}

@@ -1,0 +1,19 @@
+.examCalanderBody{
+    display: flex;
+}
+
+.examCalanderImg img{
+    width: 510px;
+    height: 456px;
+}
+
+.calanderTableData{
+    background-color: #47bc76;
+    padding: 10px;
+}
+
+.calanderTable tr td{
+    margin-left: 10px;
+    border: 1px solid black;
+}
+

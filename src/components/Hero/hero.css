@@ -57,6 +57,34 @@
 /* medium screen*/
 
 .hero-t{
-    color: red;
-    background: url(../../../public/images/home.jpg);
+    display: flex;
+}
+
+.heroBox-t{
+    width: 50%;
+    height: 500px;
+}
+
+.heroTopic-t{
+    padding-top: 16%;
+}
+
+.heroPara-t .heroPara{
+    padding-top: 10%;
+}
+
+
+.heroPara-t .heroPara{
+    font-size: 150%;
+}
+
+/* small screen */
+
+.heroTopic-s{
+    text-align: center;
+    margin-top: 5%;
+}
+
+.heroTopic-s span{
+    font-size: 50px;
 }

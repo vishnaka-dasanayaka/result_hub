@@ -49,11 +49,43 @@ export default function Hero() {
     {isTabletOrMobile && 
     <div>
       <div className="hero-t">
-        <h1>hello</h1>
+        <div className="heroTopic-t heroBox-t">
+
+          <h1 className='heroTopic'>
+                <span className="initialLetter">R</span>ESULT
+                <span className="initialLetter">  H</span>UB 
+            </h1>
+
+            <h2 className='heroTopicDescription'>Grab Your Results</h2>
+
+            <p className='heroCommand'>
+                <span className="link"><a href="https://www.google.com/">Log In </a></span>
+                    or
+                <span className="link"><a href="https://www.google.com/"> Register </a></span>
+                to <span className="blue">VIEW RESULTS</span>
+            </p>
+
+        </div>
+        <div className="heroPara-t heroBox-t">
+        <p className="heroPara">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto et blanditiis laboriosam magnam voluptatibus nobis asperiores sed vel labore doloremque ad id laborum soluta, doloribus tenetur ipsam. Commodi, blanditiis quibusdam!
+          </p>
+        </div>
       </div>
     </div>}
     {isPorttrait && 
     <div>
+
+      <div className="hero-s">
+        <div>
+          <h1 className='heroTopic-s'> <span>R</span>ESULT <span>H</span>UB</h1>
+        </div>
+        <div className="heroPara-s">
+        <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto et blanditiis laboriosam magnam voluptatibus nobis asperiores sed vel labore doloremque ad id laborum soluta, doloribus tenetur ipsam. Commodi, blanditiis quibusdam!
+          </p>
+        </div>
+      </div>
       
     </div>}
     </div>

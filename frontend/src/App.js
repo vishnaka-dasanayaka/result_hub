@@ -1,3 +1,4 @@
+import React from "react";
 import  ReactDOM  from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Axios from "axios";
@@ -12,7 +13,7 @@ function App() {
   const [data,setData] = useState("");
 
   const getData = async() => {
-    const response = await Axios.get("http://localhost:3001/getData");
+    const response = await Axios.get("http://localhost:3002/getData");
     setData(response.data);
   }
 

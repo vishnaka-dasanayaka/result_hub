@@ -4,7 +4,7 @@ import CloseIcon from '@mui/icons-material/Close';
 
 
 function CreatePopup(props) {
-  return (props.trigger)?(
+  return (props.createTrigger)?(
     <div className='popup'>
       <div className="popup-inner">
         <br/>
@@ -54,7 +54,7 @@ function CreatePopup(props) {
             </div>
             
         </div>
-        <button className="close-btn" onClick={() => {props.setTrigger(false)}}><CloseIcon/></button>
+        <button className="close-btn" onClick={() => {props.setCreateTrigger(false)}}><CloseIcon/></button>
         { props.children }
       </div>
     </div>

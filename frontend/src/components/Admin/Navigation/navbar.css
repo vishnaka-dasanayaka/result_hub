@@ -1,0 +1,46 @@
+.navBar{
+    margin: auto !important;
+    display: flex !important;
+    justify-content: center !important;
+    height: 152px;
+    background-color: #b2bec3;
+}
+
+.navBarLogoBox{
+    flex: 2;
+    height: 100%;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.navBarLogo{
+    height: 60%;
+    border-radius: 20%;
+}
+
+.navBarTopicBox{
+    flex: 10;
+}
+
+.navBarButtonBox{
+    flex: 2;
+}
+
+.navBarTopic{
+    text-align: center;
+    color: #841b1b;
+}
+
+.navBarButton{
+    color: white;
+    background-color: #2d3436;
+    border: none;
+    padding: 5% 10%;
+    border-radius: 10px;
+    border: transparent 1px solid;
+}
+
+.navBarButton:hover{
+    border: #2d3436 1px solid;
+    background-color: rgb(124, 122, 122);
+}

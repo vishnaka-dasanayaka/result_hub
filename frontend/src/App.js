@@ -7,6 +7,7 @@ import ExamCalander from "./pages/ExamCalander/ExamCalander";
 import Home from "./pages/Home/Home";
 import Result from "./pages/Result/Result";
 import { useEffect, useState } from "react";
+import Admin from "./pages/Admin/Admin";
 
 function App() {
 
@@ -23,15 +24,16 @@ function App() {
 
   return (
     
-    
+    /*<div>{data}</div>  */
     <BrowserRouter>
-    <div>{data}</div> 
+    
       <Routes>
       
           <Route path='/' element={<Home />} />
           <Route path="about" element={<About />} />
           <Route path="examcalander" element={<ExamCalander />} />
           <Route path="result" element={<Result />} />
+          <Route path="admin" element={<Admin />} />
         </Routes>
     </BrowserRouter>
   );

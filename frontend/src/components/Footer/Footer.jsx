@@ -84,8 +84,8 @@ return (
             <h2 className="footerBoxTitle-l">Home</h2>
             <h2 className="footerBoxTitle-l">Exam Calander</h2>
             <h2 className="footerBoxTitle-l">About Us</h2>
-            <h2 className="footerBoxTitle-l">Log In</h2>
-            <h2 className="footerBoxTitle-l">Register</h2>
+            <h2 className="footerBoxTitle-l">View Result</h2>
+            <h2 className="footerBoxTitle-l">Login as Admin</h2>
           </div>
 
         </div>
@@ -206,8 +206,8 @@ return (
             <h2 className="footerBoxTitle-l">Home</h2>
             <h2 className="footerBoxTitle-l">Exam Calander</h2>
             <h2 className="footerBoxTitle-l">About Us</h2>
-            <h2 className="footerBoxTitle-l">Log In</h2>
-            <h2 className="footerBoxTitle-l">Register</h2>
+            <h2 className="footerBoxTitle-l">View Results</h2>
+            <h2 className="footerBoxTitle-l">Login as Admin</h2>
           </div>
 
         </div>

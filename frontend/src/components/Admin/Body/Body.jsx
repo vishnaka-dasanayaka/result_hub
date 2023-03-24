@@ -22,7 +22,7 @@ export default function Body() {
         </div>
 
         <div className="iconBox">
-            <table>
+            <table className='adminBodyTable'>
                 <tr>
                     <td onClick={() => setButtonPopup(true)}><AddCardIcon className="icon"/></td>
                     <td><RemoveRedEyeIcon className="icon"/></td>
@@ -55,3 +55,4 @@ export default function Body() {
     </div>
   )
 }
+//buttonPopup

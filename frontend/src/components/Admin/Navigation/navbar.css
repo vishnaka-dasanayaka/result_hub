@@ -44,3 +44,12 @@
     border: #2d3436 1px solid;
     background-color: rgb(124, 122, 122);
 }
+
+.logoutLink{
+    color: white;
+    text-decoration: none;
+}
+
+.logoutLink:hover{
+    color: white;
+}

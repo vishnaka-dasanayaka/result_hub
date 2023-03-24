@@ -13,14 +13,91 @@
 
 .popup-inner{
     position: relative;
-    padding: 32px;
+    padding: 30px;
     width: 100%;
     max-width: 640px;
     background-color: white;
+    border-radius: 20px;
 }
 
 .popup-inner .close-btn{
     position: absolute;
     top: 16px;
     right: 16px;
+    background-color: transparent;
+    border: 1px solid black;
+    border-radius: 10px;
 }
+
+.popup-inner .close-btn:hover{
+    color: white;
+    background-color: black;
+    border: 1px transparent solid;
+}
+
+.header{
+    height: 45px;
+    background-color: #d9d9d9;
+    font-size: 200%;
+    text-align: center;
+}
+
+.topic {
+    background-color: #393131;
+    margin-top: 1%;
+    color: white;
+    padding: 2%;
+    font-size: 100%;
+    border-radius: 20px;
+    width: fit-content;
+    margin-left: 0;
+}
+
+.input{
+    width: 100%;
+    background-color: #b5b3af;
+    border: none;
+    color: rgb(255, 255, 255);
+    border-radius: 10px;
+    height: 30px;
+}
+
+.input:hover{
+    border: 1px solid #393131;
+}
+
+.resultTable{
+    margin-left: 20%;
+}
+
+.tableDetail{
+    text-align: left;
+    padding-left: 10px;
+}
+
+input{
+    width: 30%;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.addButtonBox{
+    width: 100%;
+    text-align: center;
+}
+
+.addButton{
+    color: white;
+    background-color: #a79976;
+    border: 1px solid #a79976;
+    padding: 1% 5%;
+    border-radius: 20px;
+}
+
+.addButton:hover{
+    color: #a79976;
+    background-color: white;
+    border: 1px solid #a79976;
+}
+

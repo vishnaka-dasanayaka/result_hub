@@ -27,7 +27,7 @@
     margin-top: 7%;
 }
 
-table tr td{
+.adminBodyTable tr td{
     text-align: center;
     padding: 3%;
     width: 10%;
@@ -35,6 +35,11 @@ table tr td{
 
 .icon{
     transform: scale(2.5);
+}
+
+.icon:hover{
+    cursor: pointer;
+    transform: scale(2.8);
 }
 
 .iconDesc{

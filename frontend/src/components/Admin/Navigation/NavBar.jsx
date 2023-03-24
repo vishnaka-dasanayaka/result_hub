@@ -15,7 +15,7 @@ export default function NavBar() {
             </div>
 
             <div className="navBarButtonBox">
-                <button className="navBarButton">Log Out</button>
+                <button className="navBarButton"><a href="http://localhost:3001" className="logoutLink">Log Out</a></button>
             </div>
         </div>
     </div>

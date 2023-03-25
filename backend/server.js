@@ -7,7 +7,11 @@ mongoose.set('strictQuery',false);
 const routes = require('./route/routes');
 
 const app = express();
-app.use(cors());
+app.use(cors(
+    {
+        origin: `http://localhost:${port}`
+    }
+));
 
 connectDB();
 

@@ -3,6 +3,8 @@ const dotenv = require("dotenv").config();
 const cors =  require("cors");
 const connectDB = require("./config/dbConnection");
 const { default: mongoose } = require("mongoose");
+mongoose.set('strictQuery',false);
+const routes = require('./route/routes');
 
 const app = express();
 app.use(cors());
@@ -18,3 +20,6 @@ app.get("/getData",(req,res) => {
 app.listen(port,() => {
     console.log(`Server is running on the port ${port}`);
 })
+
+app.use(express.json());
+app.use(routes);

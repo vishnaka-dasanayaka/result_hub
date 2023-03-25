@@ -9,12 +9,14 @@ import CreatePopup from '../../Popups/CreatePopup/CreatePopup';
 import { useState } from 'react';
 import ViewPopup from '../../Popups/ViewPopup/ViewPopup';
 import UpdatePopup from '../../Popups/UpdatePopup/UpdatePopup';
+import DeletePopup from '../../Popups/DeletePopup/DeletePopup';
 
 export default function Body() {
 
     const [createButtonPop, setCreateButtonPopup] = useState(false);
     const [viewButtonPop, setViewButtonPopup] = useState(false);
     const [updateButtonPop, setUpdateButtonPopup] = useState(false);
+    const [deleteButtonPop, setDeleteButtonPopup] = useState(false);
 
   return (
     <div>
@@ -31,7 +33,7 @@ export default function Body() {
                     <td onClick={() => setCreateButtonPopup(true)}><AddCardIcon className="icon"/></td>
                     <td onClick={() => setViewButtonPopup(true)}><RemoveRedEyeIcon className="icon"/></td>
                     <td onClick={() => setUpdateButtonPopup(true)}><BrowserUpdatedIcon className="icon"/></td>
-                    <td><DeleteIcon className="icon"/></td>
+                    <td onClick={() => setDeleteButtonPopup(true)}><DeleteIcon className="icon"/></td>
                     <td><StorageIcon className="icon"/></td>
                 </tr>
                 <tr>
@@ -45,7 +47,7 @@ export default function Body() {
                         <button onClick={() => setUpdateButtonPopup(true)} className="iconDesc">Update Result</button>
                     </td>
                     <td>
-                        <button className="iconDesc">Delete Result</button>
+                        <button onClick={() => setDeleteButtonPopup(true)} className="iconDesc">Delete Result</button>
                     </td>
                     <td>
                         <button className="iconDesc">View Database</button>
@@ -58,7 +60,7 @@ export default function Body() {
       <CreatePopup createTrigger={createButtonPop} setCreateTrigger={setCreateButtonPopup}></CreatePopup>
       <ViewPopup viewTrigger = {viewButtonPop} setViewTrigger={setViewButtonPopup}></ViewPopup>
       <UpdatePopup updateTrigger = {updateButtonPop} setUpdateTrigger={setUpdateButtonPopup}></UpdatePopup>
+      <DeletePopup deleteTrigger = {deleteButtonPop} setDeleteTrigger={setDeleteButtonPopup}></DeletePopup>
     </div>
   )
 }
-//buttonPopup

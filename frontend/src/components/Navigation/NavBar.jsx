@@ -31,7 +31,7 @@ return (
 
           <div className="navBarRight-l">
             <button className="navBarButton-l"><a className="navBarButtonLink"href="http://localhost:3001/result">View Result</a></button>
-            <button className="navBarButton-l"><a className="navBarButtonLink"href="http://localhost:3001/admin">Log In as Admin</a></button>
+            <button className="navBarButton-l"><a className="navBarButtonLink"href="http://localhost:3001/register">Log In as Admin</a></button>
           </div>
         </div>
       </div>

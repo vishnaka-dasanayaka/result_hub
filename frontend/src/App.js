@@ -8,6 +8,8 @@ import Home from "./pages/Home/Home";
 import Result from "./pages/Result/Result";
 import { useEffect, useState } from "react";
 import Admin from "./pages/Admin/Admin";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
 
 function App() {
 
@@ -34,6 +36,8 @@ function App() {
           <Route path="examcalander" element={<ExamCalander />} />
           <Route path="result" element={<Result />} />
           <Route path="admin" element={<Admin />} />
+          <Route path="register" element={<Register />} />
+          <Route path="login" element={<Login />} />
         </Routes>
     </BrowserRouter>
   );

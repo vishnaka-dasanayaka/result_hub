@@ -2,6 +2,7 @@ const express = require("express");
 const dotenv = require("dotenv").config();
 const cors =  require("cors");
 const connectDB = require("./config/dbConnection");
+const { default: mongoose } = require("mongoose");
 
 const app = express();
 app.use(cors());

@@ -5,20 +5,57 @@ import './resulTable.css'
 export default function ResultTable() {
   return (
     <div className=''>
-      <div className="searchSection">
-        <div className="searchBar">
-          <div className="searchBarText">Examination : </div>
-          <div className="searchBarInput"><Search/></div>
+      <br />
+
+      <div className="resultPage">
+
+        <div className="headSectionBox">
+          <label htmlFor="" className="headText">Enter Your Index Number </label>
+          <input type="text" placeholder='Enter your index number' className="headInput" />
+          <button className="showButton">SHOW RESULTS</button>
         </div>
 
-        <div className="searchButton">
-          <button>VIEW</button>
+        <div className="showResultTableBox">
+          <table className="showResultTable">
+            <thead>
+              <tr>
+                <td>SUBJECT</td>
+                <td>RESULT</td>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Combined Mathematics</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Chemistry</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Physics</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>General English</td>
+                <td></td>
+              </tr>
+
+              <tr>
+                <td>Common Test</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </div>
-    
-        <div className="resultTable">
-          
-        </div>
-    </div>
+
+      </div>
+
+      <br />
     </div>
   )
 }

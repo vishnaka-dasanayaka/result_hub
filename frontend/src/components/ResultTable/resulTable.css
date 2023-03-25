@@ -1,30 +1,55 @@
-.searchSection{
-    display: flex;
-    margin-top: 5%;
-}
-
-.searchBar{
-    flex: 6; 
-    display: flex;
-    border: 3px #4d4d4d solid;
-    padding: 1%;
-    border-radius: 50px;
-    margin-left: 17%;
-}
-
-.searchButton{
-    flex: 6;
-    margin-left: 10%;
-}
-
-.searchButton button{
-    background-color: #3c6255;
-    border: none;
-    padding: 2.5% 10%;
-    border-radius: 10px;
+.showButton{
     color: white;
+    background-color: #3c6255;
+    border: 1px solid #3c6255;
+    padding: 3px 8px;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-left: 50px;
 }
 
-.searchBarInput{
-    position: relative;
+.showButton:hover{
+    background-color: white;
+    color: #3c6255;
 }
+
+.showResultTable tr td{
+    border: #3c6255 2px solid;
+    width: 300px;
+    text-align: left;
+    padding-left: 30px;
+    
+}
+
+.showResultTable thead td{
+    text-align: center;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+.showResultTable tbody td{
+    font-size: 20px;
+}
+
+.headSectionBox{
+    margin-left: 100px;
+    margin-top: 70px;
+}
+
+.headText{
+    margin-right: 50px;
+    background-color: #3c6255;
+    padding: 5px 20px;
+    color: white;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.headInput{
+    font-size: 20px;
+}
+
+.showResultTable{
+    margin-top: 50px;
+}
+

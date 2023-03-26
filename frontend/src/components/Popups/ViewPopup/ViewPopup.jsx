@@ -27,7 +27,11 @@ function ViewPopup(props) {
         
 
         axios.get('http://localhost:3002/read?indexNo=' + indexNumber)
-            .then((res) => {console.log(res);setResults(res.data);})
+            .then((res) => {
+              console.log(res);
+              setResults(res.data);
+              
+            })
             .catch((err) => console.log(err));
     }
 

@@ -27,8 +27,6 @@ router.post("/", async (req, res) => {
 
 router.get("/", async (req, res) => {
 
-
-
     const indexNumber = req.query.indexNo;
     console.log(indexNumber);
 
@@ -41,5 +39,6 @@ router.get("/", async (req, res) => {
     }
     
 });
+
 
 module.exports = router;

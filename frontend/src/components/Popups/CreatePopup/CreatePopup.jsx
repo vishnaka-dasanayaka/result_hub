@@ -41,6 +41,7 @@ function CreatePopup(props) {
 
         axios.post('http://localhost:3002/result', newResult);
         alert("Succesfully added to the database");
+        window.location.reload();
         /*axios.post("http://localhost:3002/result", newResult)
         .then((response) => {
             if (response.status == 200) {

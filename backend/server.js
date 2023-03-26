@@ -4,11 +4,11 @@ const cors =  require("cors");
 const connectDB = require("./config/dbConnection");
 const { default: mongoose } = require("mongoose");
 mongoose.set('strictQuery',false);
-const routes = require('./route/routes');
 
 const app = express();
 app.use(cors());
 app.use(express.json());
+
 // - - connect db via the browser - - 
 connectDB();
 
@@ -16,6 +16,12 @@ const port = process.env.PORT || 3003;
 
 //send result to the database
 app.use("/result", require('./route/resultRoute'));
+
+//send User to the database
+app.use("/user", require('./route/userRegisterRoute'));
+
+//get result from database
+app.use("/read", require('./route/resultRoute'));
 
 app.listen(port,() => {
     console.log(`Server is running on the port ${port}`);

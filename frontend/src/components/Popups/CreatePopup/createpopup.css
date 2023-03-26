@@ -82,6 +82,14 @@ input{
     padding: 5px;
 }
 
+.newLabel{
+    height: 35px;
+    width: 40px;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
 .addButtonBox{
     width: 100%;
     text-align: center;

@@ -32,15 +32,14 @@ app.delete("/delete/:id", (req,res) => {
 
 //update
 app.put("/update/:id", (req,res) => {
-  console.log(req.query._id);
-  /*Result.findByIdAndUpdate({_id: req.params.id},{
-    res0: req.body.res0,
-    res1: req.body.res1,
-    res2: req.body.res2,
-    res3: req.body.res3,
-    res4: req.body.res4
+  Result.findByIdAndUpdate({_id: req.params.id},{
+    mathResult: req.body.res1,
+    chemResult: req.body.res2,
+    phyResult: req.body.res3,
+    engResult: req.body.res4,
+    testResult: req.body.res5
   }).then((doc) => console.log(doc)).catch((err) => console.log(err));
-*/});
+});
 
 app.listen(port,() => {
     console.log(`Server is running on the port ${port}`);

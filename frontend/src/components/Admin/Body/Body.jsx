@@ -24,7 +24,7 @@ export default function Body() {
 
         <div className="textBox">
             <div className="desc">Number of total results on the site</div>
-            <div className="count">1245</div>
+            <div className="count">10</div>
         </div>
 
         <div className="iconBox">
@@ -34,7 +34,7 @@ export default function Body() {
                     <td onClick={() => setViewButtonPopup(true)}><RemoveRedEyeIcon className="icon"/></td>
                     <td onClick={() => setUpdateButtonPopup(true)}><BrowserUpdatedIcon className="icon"/></td>
                     <td onClick={() => setDeleteButtonPopup(true)}><DeleteIcon className="icon"/></td>
-                    <td><StorageIcon className="icon"/></td>
+                    <td><a id='dataBaseLink' href="https://cloud.mongodb.com/v2/641bf5d5f4ccef6463977465#/metrics/replicaSet/641bf60329ef9d63413e6918/explorer/result_hub"><StorageIcon className="icon"/></a></td>
                 </tr>
                 <tr>
                     <td>
@@ -50,7 +50,10 @@ export default function Body() {
                         <button onClick={() => setDeleteButtonPopup(true)} className="iconDesc">Delete Result</button>
                     </td>
                     <td>
-                        <button className="iconDesc">View Database</button>
+                        <a href="https://cloud.mongodb.com/v2/641bf5d5f4ccef6463977465#/metrics/replicaSet/641bf60329ef9d63413e6918/explorer/result_hub">
+                        <button className="iconDesc">View Database</button>    
+                        </a>
+                        
                     </td>
                 </tr>
             </table>

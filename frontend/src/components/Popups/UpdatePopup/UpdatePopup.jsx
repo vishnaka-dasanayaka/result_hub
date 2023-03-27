@@ -51,7 +51,15 @@ function UpdatePopup(props) {
       };
 
       const updateResult = () => {
-        console.log(updatedResults);
+          console.log(updatedResults);
+        
+        axios
+        .put(`/update/${results._id}`, updatedResults)
+        .then((res) => console.log(res))
+        .catch((err) => console.log(err));
+        
+        alert("done");
+        window.location.reload();
       }
 
   return (props.updateTrigger)?(
@@ -90,31 +98,31 @@ function UpdatePopup(props) {
                 <tr>
                     <td className='updateTableDetail'>Combined Mathematics</td>
                     <td className='updateTableDetail'><label className="newLabel" htmlFor="">{results.mathResult}</label></td>
-                    <td className='updateTableDetail'><input name='res0' value={results.res0} onChange={updateChange} type="text" /></td>
+                    <td className='updateTableDetail'><input name='res1' value={results.res1} onChange={updateChange} type="text" /></td>
                 </tr>
 
                 <tr>
                     <td className='updateTableDetail'>Chemistry</td>
                     <td className='updateTableDetail'><label className="newLabel" htmlFor="">{results.chemResult}</label></td>
-                    <td className='updateTableDetail'><input name='res1' value={results.res1} onChange={updateChange} type="text" /></td>
+                    <td className='updateTableDetail'><input name='res2' value={results.res2} onChange={updateChange} type="text" /></td>
                 </tr>
 
                 <tr>
                     <td className='updateTableDetail'>Physics</td>
                     <td className='updateTableDetail'><label className="newLabel" htmlFor="">{results.phyResult}</label></td>
-                    <td className='updateTableDetail'><input name='res2' value={results.res2} onChange={updateChange} type="text" /></td>
+                    <td className='updateTableDetail'><input name='res3' value={results.res3} onChange={updateChange} type="text" /></td>
                 </tr>
 
                 <tr>
                     <td className='updateTableDetail'>General English</td>
                     <td className='updateTableDetail'><label className="newLabel" htmlFor="">{results.engResult}</label></td>
-                    <td className='updateTableDetail'><input name='res3' value={results.res3} onChange={updateChange} type="text" /></td>
+                    <td className='updateTableDetail'><input name='res4' value={results.res4} onChange={updateChange} type="text" /></td>
                 </tr>
 
                 <tr>
                     <td className='updateTableDetail'>Common Test</td>
                     <td className='updateTableDetail'><label className="newLabel" htmlFor="">{results.testResult}</label></td>
-                    <td className='updateTableDetail'><input name='res4' value={results.res4} onChange={updateChange} type="text" /></td>
+                    <td className='updateTableDetail'><input name='res5' value={results.res5} onChange={updateChange} type="text" /></td>
                 </tr>
             </table> }
             <br />

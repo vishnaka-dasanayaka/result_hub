@@ -28,7 +28,6 @@ router.post("/", async (req, res) => {
 router.get("/", async (req, res) => {
 
     const indexNumber = req.query.indexNo;
-    console.log(indexNumber);
 
     try {
         const result = await  Result.findOne({indexNumber});
